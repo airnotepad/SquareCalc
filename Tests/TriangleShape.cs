@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using SquareCalc;
+using SquareCalc.Base;
 using static SquareCalc.Exceptions.TriangleExceptions;
 
 namespace Tests
@@ -40,9 +41,17 @@ namespace Tests
         [TestCase(3, 5, 6, ExpectedResult = 7.483314773547883)]
         public double Square(double sideA, double sideB, double sideC)
         {
-            var triangle = new Triangle(sideA, sideB, sideC);
+            var shape = new Triangle(sideA, sideB, sideC);
 
-            return triangle.Square;
+            return shape.Square;
+        }
+
+        [TestCase(3, 4, 5, ExpectedResult = 6)]
+        public double BaseSquare(double sideA, double sideB, double sideC)
+        {
+            var shape = new Triangle(sideA, sideB, sideC);
+
+            return (shape as Shape).Square;
         }
     }
 }

@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using SquareCalc;
+using SquareCalc.Base;
 
 namespace Tests
 {
@@ -24,6 +25,14 @@ namespace Tests
             var shape = new Circle(input);
 
             return shape.Square;
+        }
+
+        [TestCase(10, ExpectedResult = 314.1592653589793)]
+        public double BaseSquare(double input)
+        {
+            var shape = new Circle(input);
+
+            return (shape as Shape).Square;
         }
     }
 }

@@ -33,7 +33,7 @@ namespace SquareCalc
         }
 
         /// <summary>
-        /// Конструктор
+        /// Конструктор треугольника
         /// </summary>
         /// <param name="A">Сторона A</param>
         /// <param name="B">Сторона B</param>
@@ -76,11 +76,21 @@ namespace SquareCalc
             return (float)(hypotenuse * hypotenuse) == cathetus.Sum(side => side * side);
         }
 
-        private void Validate(string ParamName, double input)
+        /// <summary>
+        /// Валидация параметров для инициализации длины стороны
+        /// </summary>
+        /// <param name="ParamName">Обозначение стороны</param>
+        /// <param name="input">Значение параметра</param>
+        /// <exception cref="ArgumentOutOfRangeException">Неправильное значение длины</exception>
+        private void Validate(string ParamName, double Input)
         {
-            if (input <= 0) throw new ArgumentOutOfRangeException(ParamName, $"Сторона {ParamName} должна быть больше нуля");
+            if (Input <= 0) throw new ArgumentOutOfRangeException(ParamName, $"Сторона {ParamName} должна быть больше нуля");
         }
 
+        /// <summary>
+        /// Проверка на возможность образования из заданных длинн сторон треугольника
+        /// </summary>
+        /// <exception cref="NotTriangleException">Несуществующий треугольник</exception>
         private void CheckTriangle()
         {
             var isTriangle = _a + _b > _c
