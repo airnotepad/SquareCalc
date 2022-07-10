@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32611.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareCalc", "SquareCalc\SquareCalc.csproj", "{EF12B58C-21D6-4079-81B6-F826EEAB2B7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{32A1BAE0-18F3-4D13-9DFB-631975E46E98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF12B58C-21D6-4079-81B6-F826EEAB2B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF12B58C-21D6-4079-81B6-F826EEAB2B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF12B58C-21D6-4079-81B6-F826EEAB2B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF12B58C-21D6-4079-81B6-F826EEAB2B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A1BAE0-18F3-4D13-9DFB-631975E46E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A1BAE0-18F3-4D13-9DFB-631975E46E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A1BAE0-18F3-4D13-9DFB-631975E46E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A1BAE0-18F3-4D13-9DFB-631975E46E98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3B8F880-7165-43A8-B6F8-7405F8CBE290}
+	EndGlobalSection
+EndGlobal
