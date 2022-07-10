@@ -1,3 +1,7 @@
+## SQL Задание
+[Pastebin](https://pastebin.com/UKJaywz3)\
+[SQLFiddle](http://sqlfiddle.com/#!18/adbfc5/1)
+
 # SquareCalc
 
 Библиотека для вычисления площади фигуры
